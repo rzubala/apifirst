@@ -17,7 +17,7 @@ get:
       description: Not Found
 post:
   tags: 
-    -  Orders
+    -  Order
   summary: Create order
   description: Create order
   operationId: createOrder
