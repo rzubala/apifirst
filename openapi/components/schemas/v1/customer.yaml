@@ -27,7 +27,8 @@ properties:
     paymentMethods:
       type: array
       items: 
-        $ref: payment_method.yaml      
+        $ref: payment_method.yaml
+      nullable: true
     dateCreated:
       $ref: ../common/iso_timestamp.yaml
     dateUpdated:
