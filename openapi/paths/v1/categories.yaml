@@ -1,0 +1,19 @@
+get: 
+  tags: 
+    -  Products
+  summary: Get a list of categories
+  description: Get a list of categories.
+  operationId: listCategories
+  responses: 
+    '200': 
+      description: Success
+      content: 
+        application/json: 
+          schema: 
+            $ref: ../../components/schemas/v1/category_list.yaml  
+    '404': 
+      description: Not Found
+      content: 
+        application/json: 
+          schema: 
+            $ref: ../../components/schemas/Problem.yaml
